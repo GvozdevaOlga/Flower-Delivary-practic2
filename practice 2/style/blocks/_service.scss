@@ -1,0 +1,132 @@
+.service {
+    .service-container {  
+        display: grid;
+        grid-template-columns: 720px 720px;
+        grid-template-rows: 220px 720px;
+        gap: 0;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "service-1 service-1"
+          "service-2 service-3";
+
+        align-items: center;
+        justify-items: center;
+
+        h3 {
+            font-family: Gilroy;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25.2px;
+            width: 560px;
+            height: 75px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: Gilroy;
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 45.6px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            font-family: Gilroy;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.2px;
+            letter-spacing: 0.025em;
+
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            appearance: none;
+            width: 168px;
+            height: 51px;
+            padding: 12px;
+            background-color: white;
+            font-family: Gilroy;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            letter-spacing: 0.03em;
+            border: solid 2px black;
+            margin-top: 70px;
+        }
+    }
+      
+        .service-1 { 
+            grid-area: service-1;
+            width: 1440px;
+            height: 220px;
+            gap: 0px;
+            border: solid 2px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+ 
+        }
+        
+        .service-2 { 
+            grid-area: service-2; 
+            border: solid 2px black;
+            gap: 0;
+            width: 720px;
+            height: 720px;
+        }
+        
+        .service-3 {
+            grid-area: service-3;
+            border: solid 2px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 720px;
+            height: 720px;
+            
+        }
+}
+
+@media screen and (max-width: 1120px) {
+    .service {
+        .service-container {
+                display: grid;
+                grid-template-columns: 1024px;
+                grid-template-rows: 220px 720px 520px;
+                gap: 0;
+                grid-auto-flow: row;
+                grid-template-areas:
+                  "service-1"
+                  "service-2"
+                  "service-3";
+        }
+        .service-1 { 
+            grid-area: service-1;
+            width: 1024px;
+        }
+          
+          .service-2 { 
+            grid-area: service-2;
+            width: 1024px;
+
+            img {
+                object-fit: cover;
+                width: 1024px;
+                height: 720px;
+            }
+        }
+          
+          .service-3 { 
+            grid-area: service-3; 
+            width: 1024px;
+            height: 520px;
+        }
+            
+    }
+}
+
+

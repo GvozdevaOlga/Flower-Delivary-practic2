@@ -1,0 +1,126 @@
+.why {
+    .why-conteiner {
+        display: grid; 
+        grid-auto-flow: row dense;
+        grid-template-columns: 720px 720px; 
+        grid-template-rows: repeat(4, 288px); 
+        gap: 0;
+        grid-template-areas: 
+            "chose-1 choose-2"
+            "chose-1 choose-3"
+            "chose-1 choose-4"
+            "chose-1 choose-5";
+    }
+
+    .chose-1 {
+        grid-area: chose-1;
+        width: 718px;
+        height: 288px;
+        border: solid 2px black;
+
+        div {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            margin-left: 80px;
+
+            h1 {
+                font-family: Gilroy;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 60px;
+            }
+        }
+    }
+
+    [class*="choose-"] {
+        width: 718px;
+        height: 288px;
+        border: solid 2px black;
+
+        div {
+            height: 220px;
+            margin: 60px;
+
+
+            h2 {
+                font-family: Gilroy;
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 45.6px;
+                margin: 20px 0;
+            }
+
+            p {
+                font-family: Gilroy;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+            }
+
+        }
+
+    }
+
+    .choose-2 {grid-area: choose-2;}
+    .choose-3 {grid-area: choose-3;} 
+    .choose-4 {grid-area: choose-4;} 
+    .choose-5 {grid-area: choose-5;} 
+}
+
+@media screen and (max-width: 1120px) {
+    .why {
+        .why-conteiner {
+            display: grid; 
+            grid-template-columns: 1024px; 
+            grid-template-rows: 220px 288px 288px 288px 288px; 
+            gap: 0;
+            grid-template-areas: 
+                "chose-1" 
+                "choose-2"
+                "choose-3"
+                "choose-4"
+                "choose-5";
+
+
+                .chose-1 {
+                    grid-area: chose-1;
+                    width: 1024px;
+                    height: 220px;
+                    border: solid 2px black;
+            
+                    div {
+                        height: 220px;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 80px;
+            
+                        h1 {
+                            font-family: Gilroy;
+                            font-size: 50px;
+                            font-weight: 600;
+                            line-height: 60px;
+                        }
+                    }
+                }
+
+                [class*="choose-"] {
+                    width: 1024px;
+                    height: 288px;
+                    border: solid 2px black;
+            
+                    div {
+                        height: 132px;
+                        margin: 60px;
+                    }
+                }
+
+                .choose-2 {grid-area: choose-2;}
+                .choose-3 {grid-area: choose-3;} 
+                .choose-4 {grid-area: choose-4;} 
+                .choose-5 {grid-area: choose-5;} 
+
+            
+        }
+    }
+}

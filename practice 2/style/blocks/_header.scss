@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+
+    .header-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 79px;
+        border: solid 1px black;
+
+        .header-conteiner_box-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            div {
+                width: 180px;
+                height: 79px;
+                border: solid 1px black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                h3 {
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.2px;
+                    letter-spacing: 0.025em;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    } 
+                }
+            }
+        }
+    }
+}

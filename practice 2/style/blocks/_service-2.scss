@@ -1,0 +1,109 @@
+.service2 {
+    .service2-container {
+        width: 1440px;
+        height: 720px;
+        border: solid 2px black;
+
+        .service2_background {
+            position: relative;
+            
+
+            img {
+                width: 1440px;
+                height: 720px;
+            }
+        }
+
+        .service2_text {
+            position: absolute;
+            left: 0;
+            top: 5275px;
+            width: 1440px;
+            height: 720px;
+            background: rgba(18, 18, 18, 0.4);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .service2_text_block {
+                text-align: center;
+                h3 {
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 25.2px;
+                    width: 586px;
+                    height: 50px;
+                    text-align: center;
+                }
+        
+                h2 {
+                    font-family: Gilroy;
+                    font-size: 38px;
+                    font-weight: 500;
+                    line-height: 45.6px;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+        
+                p {
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.2px;
+                    letter-spacing: 0.025em;
+        
+                }
+        
+                button {
+                    border: none;
+                    cursor: pointer;
+                    appearance: none;
+                    width: 168px;
+                    height: 51px;
+                    padding: 12px;
+                    background-color: rgb(0, 0, 0, 0);
+                    color: white;
+                    font-family: Gilroy;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19.2px;
+                    letter-spacing: 0.03em;
+                    border: solid 2px white;
+                    margin-top: 70px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .service2 {
+        .service2-container {
+            width: 1024px;
+            height: 720px;
+
+            .service2_background {
+                width: 1024px;
+                height: 720px;
+
+                img {
+                    object-fit: cover;
+                    width: 1023px;
+                    height: 720px;
+                }
+            }
+            
+
+            .service2_text {
+                width: 1023px;
+                height: 720px;
+                top: 8560px;
+                width: 1024px;
+                height: 720px;
+            }
+        }  
+    }
+}

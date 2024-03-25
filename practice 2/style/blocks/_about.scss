@@ -1,0 +1,130 @@
+.about {
+    .about-conteiner {
+        display: grid; 
+        grid-template-columns: 720px 720px; 
+        grid-template-rows: 581px; 
+        gap: 0;
+        grid-template-areas: 
+            "note-1 note-2";
+    }
+
+    .note-1 {
+        grid-area: note-1;
+        width: 718px;
+        height: 581px;
+        border: solid 2px black;
+
+        div {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            margin-left: 80px;
+
+            h1 {
+                font-family: Gilroy;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 60px;
+            }
+        }
+    }
+
+    .note-2 {
+        grid-area: note-2;
+        width: 718px;
+        height: 581px;
+        border: solid 2px black;
+
+        div {
+            height: 220px;
+            margin: 80px;
+
+            h3 {
+                font-family: Gilroy;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.8px;
+            }
+
+            h2 {
+                font-family: Gilroy;
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 45.6px;
+                margin: 20px 0;
+            }
+
+            p {
+                font-family: Gilroy;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+            }
+
+            button {
+                border: none;
+                cursor: pointer;
+                appearance: none;
+                width: 168px;
+                height: 51px;
+                padding: 12px 24px;
+                background-color: white;
+                font-family: Gilroy;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.2px;
+                letter-spacing: 0.03em;
+                border: solid 2px black;
+                margin-top: 70px;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 1120px) {
+    .about {
+        .about-conteiner {
+            display: grid; 
+            grid-template-columns: 1024px; 
+            grid-template-rows: 220px 581px; 
+            gap: 0;
+            grid-template-areas: 
+                "note-1" 
+                "note-2";
+
+
+                .note-1 {
+                    grid-area: note-1;
+                    width: 1024px;
+                    height: 220px;
+                    border: solid 2px black;
+            
+                    div {
+                        height: 220px;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 80px;
+            
+                        h1 {
+                            font-family: Gilroy;
+                            font-size: 50px;
+                            font-weight: 600;
+                            line-height: 60px;
+                        }
+                    }
+                }
+            
+                .note-2 {
+                    grid-area: note-2;
+                    width: 1024px;
+                    height: 581px;
+                    border: solid 2px black;
+            
+                    div {
+                        height: 421px;
+                        margin: 80px;
+                    }
+                }  
+        }
+    }
+}
